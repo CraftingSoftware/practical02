@@ -1,0 +1,12 @@
+name: build
+
+# Controls when the action will run
+# Workflow begins with push or PR events
+# Focuses on the main branch only
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# TODO: create a workflow with 4 jobs (markdown lint, spellcheck, python run, gatorgrade)
