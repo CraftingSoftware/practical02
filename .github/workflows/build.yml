@@ -1,4 +1,4 @@
-name: grade
+name: build
 
 # Controls when the action will run
 # Workflow begins with push or PR events
