@@ -1,0 +1,43 @@
+setup: |
+  poetry install
+  echo "Done installing project dependencies!"
+---
+
+# check the technical writing for various characteristics
+- writing/reflection.md:
+  - description: Ensure that reflection.md file exists in the writing/ directory
+    check: ConfirmFileExists
+  - description: Write a minimum number of meaningful words (100) in the reflection
+    check: CountFileWords
+    options:
+      count: 100
+      exact: false
+  - description: Complete all TODOs, remove the TODO markers in the reflection.md
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+
+- tests/test_permit_manager.py:
+  - description: Complete all TODOs in tests/test_permit_manager.py
+    check: MatchFileFragment
+    options:
+      fragment: TODO
+      count: 0
+      exact: true
+
+# run the program and confirm the existence of fragments in its output
+- description: 'Write four maintainable tests that pass'
+  check: MatchCommandFragment
+  options:
+    command: 'poetry run pytest tests/test_permit_manager.py'
+    fragment: 7 passed
+    count: 1
+    exact: true
+
+# count number of commits in the GitHub repository
+- description: Have at least a specific minimum number of commits (6) in repository
+  check: CountCommits
+  options:
+    count: 1
