@@ -64,6 +64,10 @@ jobs:
     runs-on: ubuntu-latest
     name: Run Python
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0    
       # Install poetry
       - name: Install Poetry
         if: always()
