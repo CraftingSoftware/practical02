@@ -1,8 +1,8 @@
 [tool.poetry]
-name = "lab-03-writing-maintainable-tests-solution"
+name = "practical-02-github-actions-solution"
 version = "0.1.0"
 description = ""
-authors = ["Maria Kim Heinert <yeeunmariakim@gmail.com>"]
+authors = ["Janyl Jumadinova <jjumadinova@allegheny.edu>"]
 
 [tool.poetry.dependencies]
 python = ">=3.7"
