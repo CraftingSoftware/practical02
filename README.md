@@ -1,7 +1,5 @@
 # Practical 02: Setting Up GitHub Actions
 
-## Due: October 7th, 2022 by midnight
-
 ## Introduction
 
 In this practical assignment, you will set up GitHub Actions to run markdown linting, spell check, Python program, `sort.py`, and its test cases from lab 03\. By the end of this exercise, you should have the tools and knowledge to be able to demonstrate mastery of the following essential technical skills of software engineering:
